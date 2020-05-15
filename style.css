@@ -136,6 +136,20 @@ footer small {
     display: block;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.logo__img {
+    height: 40px;
+    width: auto;
+    margin-right: 1em;
+}
+
+
 .main__nav {
     padding: 1em;
 }
@@ -171,38 +185,19 @@ footer small {
     display: flex;
     flex-direction: column;
     background: var(--clr-second);
-}
-
-.menu a {
-    text-decoration: none;
-}
-
-.menu a:hover {
-    background-color: var(--clr-main-light);
-}
-
-.menu a:active {
-    background-color: var(--clr-main-dark);
-}
-
-.menu h1 {
-    margin-top: 0.85714286em;
-    margin-bottom: 0.85714286em;
-}
-
-.menu :not(:first-child) {
-    background: var(--clr-main);
-    width: 100%;
     text-align: center;
 }
 
-.menu :nth-child(2) {
-    margin-bottom: 2px;
+.menu .seleccionado {
+    background-color: var(--clr-main-light);
 }
 
-.menu .logo:hover,
-.menu .logo:active {
-    background-color: var(--clr-second);
+.menu a:last-of-type {
+    background-color: var(--clr-main);
+}
+
+.menu h1 {
+    margin: 0;
 }
 
 .nav__index {
@@ -211,10 +206,6 @@ footer small {
 
 .nav__category {
     margin-top: 2em;
-}
-
-.seleccionado {
-    opacity: 0.85;
 }
 
 .video {
@@ -243,6 +234,15 @@ footer small {
         max-width: 800px;
     }
 
+    .logo {
+        padding: 0;
+    }
+
+    .logo:hover,
+    .logo:active {
+        background-color: var(--clr-second);
+    }
+
     .main__nav {
         width: 100%;
     }
@@ -264,13 +264,25 @@ footer small {
     .menu {
         flex-direction: row;
         justify-content: end;
-        align-items: center;
+        /*align-items: center;*/
         margin-bottom: 2em;
     }
 
     .menu a {
         margin-left: 1em;
         margin-right: auto;
+    }
+
+    .menu a:last-of-type {
+        background-color: var(--clr-second);
+    }
+
+    .menu a:hover {
+        background-color: var(--clr-main-light);
+    }
+
+    .menu a:active {
+        background-color: var(--clr-main-dark);
     }
 
     .menu :not(:first-child) {
@@ -283,7 +295,7 @@ footer small {
 
     .menu :nth-child(2) {
         margin-bottom: 0;
-        margin-right: 2em;
+        margin-right: 1em;
     }
 
     .menu a:hover {
