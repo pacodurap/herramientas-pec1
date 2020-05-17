@@ -137,6 +137,8 @@ footer small {
     clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
     animation: clip 4s infinite;
     -webkit-animation: clip 6s infinite;
+    margin: 0 auto;
+    display: block;
 }
 
 @keyframes clip {
@@ -226,7 +228,9 @@ footer small {
 .menu a:nth-last-child(-n+2),
 .menu span:nth-last-child(-n+2) {
     background-color: var(--clr-main);
+    margin-bottom: 0;
     margin-top: 4px;
+    line-height: 2em;
 }
 
 .menu h1 {
@@ -284,6 +288,10 @@ footer small {
         max-width: 800px;
     }
 
+    .footer__animation {
+        margin: 0;
+    }
+
     .logo {
         padding: 0;
     }
@@ -324,7 +332,6 @@ footer small {
     .menu a:nth-last-child(-n+2),
     .menu span:nth-last-child(-n+2) {
         background-color: var(--clr-second);
-        margin-top: 0;
     }
 
     .menu a:hover {
@@ -348,7 +355,6 @@ footer small {
     }
 
     .menu :nth-child(2) {
-        margin-bottom: 0;
         margin-right: 1em;
     }
 
