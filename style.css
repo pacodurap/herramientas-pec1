@@ -79,7 +79,8 @@ h1 {
     margin-bottom: 1.2631579em;
 }
 
-h2 {
+h2,
+.h2 {
     font-family: 'Hind', sans-serif;
     font-weight: 700;
     font-size: var(--fs-h2);
