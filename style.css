@@ -414,10 +414,10 @@ footer small {
 
     .main__nav a {
         border-radius: 0px;
-        -webkit-border-radius: ;
-        -moz-border-radius: ;
-        -ms-border-radius: ;
-        -o-border-radius: ;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
         transition: border-radius 0.2s ease-in-out;
         -webkit-transition: border-radius 0.2s ease-in-out;
         -moz-transition: border-radius 0.2s ease-in-out;
