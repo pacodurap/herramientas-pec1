@@ -15,38 +15,55 @@
 <body>
     <nav class='menu'>
         <a class="logo" href="index.html">
-            <img class="logo__img" src="/assets/logo.png" srcset="/assets/logo.png 1x, /assets/logo@2x.png 2x" alt="Logo">
+            <img class="logo__img" src="/assets/logo.png" srcset="/assets/logo.png 1x, /assets/logo@2x.png 2x"
+                alt="Logo">
             <h1 class="logo__txt">WikiFront</h1>
         </a>
-        <span class="seleccionado"><h2>Module bundlers</h2></span>
-        <a href="preprocesadores.html"><h2>Preprocesadores</h2></a>        
+        <span class="seleccionado">
+            <h2>Module bundlers</h2>
+        </span>
+        <a href="preprocesadores.html">
+            <h2>Preprocesadores</h2>
+        </a>
     </nav>
 
     <main class="category">
         <h1>Module Bundlers</h1>
-        <p>Los module bundlers nos permiten automatizar tareas y gestionar los assets de las dependencias instaladas.</p>
+        <p>Los module bundlers nos permiten automatizar tareas y gestionar los assets de las dependencias instaladas.
+        </p>
 
         <nav class="main__nav nav__category">
             <ul>
-                <li><a href="#">
+                <li><a class="nav__category__item" href="#">
+                        <picture>
+                            <source media="(min-width: 0px)" srcset="./assets/browserify-small.jpg 1x,
+                        ./assets/browserify-small@2.jpg 2x">
+                            <img src="./assets/browserify-small@2.jpg" alt="Parcel top image" class="nav__category__img">
+                        </picture>
                         <h2>Browserify</h2>
                     </a></li>
-                <li><a href="#">
-                        <h2>FuseBox</h2>
-                    </a></li>
-                <li><a href="#">
-                        <h2>Google Closure Compiler</h2>
-                    </a></li>
-                <li><a href="parcel.html">
+                <li><a class="nav__category__item" href="parcel.html">
+                        <picture>
+                            <source media="(min-width: 0px)" srcset="./assets/parcel-main-small.jpg 1x,
+                    ./assets/parcel-main-small@2.jpg 2x">
+                            <img src="./assets/parcel-main-small@2.jpg" alt="Parcel top image" class="nav__category__img">
+                        </picture>
                         <h2>Parcel</h2>
                     </a></li>
-                <li><a href="#">
-                        <h2>Pax</h2>
-                    </a></li>
-                <li><a href="#">
+                <li><a class="nav__category__item" href="#">
+                        <picture>
+                            <source media="(min-width: 0px)" srcset="./assets/rollup-small.jpg 1x,
+                    ./assets/rollup-small@2.jpg 2x">
+                            <img src="./assets/rollup-small@2.jpg" alt="Parcel top image" class="nav__category__img">
+                        </picture>
                         <h2>Rollup</h2>
                     </a></li>
-                <li><a href="#">
+                <li><a class="nav__category__item" href="#">
+                        <picture>
+                            <source media="(min-width: 0px)" srcset="./assets/webpack-small.jpg 1x,
+                    ./assets/webpack-small@2.jpg 2x">
+                            <img src="./assets/webpack-small@2.jpg" alt="Parcel top image" class="nav__category__img">
+                        </picture>
                         <h2>Webpack</h2>
                     </a></li>
             </ul>

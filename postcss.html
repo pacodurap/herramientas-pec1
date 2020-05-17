@@ -30,6 +30,15 @@
     <main class="detail">
         <article>
             <h1>PostCSS</h1>
+            <picture>
+                <source media="(min-width: 0px)" srcset="./assets/postcss-main-small.jpg 1x,
+                ./assets/postcss-main-small@2.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./assets/postcss-main-mid.jpg 1x,
+                ./assets/postcss-main-mid@2.jpg 2x">
+                <source media="(min-width: 1024px)" srcset="./assets/postcss-main-big.jpg 1x,
+                ./assets/postcss-main-big@2.jpg 2x">
+                <img src="./assets/postcss-main-original.jpg" alt="Post-CSS top image" class="detail__top-img">
+            </picture>
             <p>En la descripción oficial del proyecto en su página de GitHub se describe a PostCSS como una herramienta
                 para transformar estilos en CSS mediante el uso de plugins de JavaScript. Actualmente cuenta con más de
                 200 plugins con los que puedes optimizar tu código CSS y realizar muchas otras acciones. Las
@@ -38,7 +47,12 @@
                 formato de datos (árbol CSS) que puede ser fácilmente manipulado mediante JavaScript. Para ello se hace
                 uso de diversos plugins para PostCSS.</p>
             <figure>
-                <img src="assets/navaja-suiza.jpg" alt="Navaja suiza con sus herramientas desplegadas">
+                <picture>
+                    <source srcset="assets/navaja-suiza.webp" type="image/webp">
+                    <source srcset="assets/navaja-suiza.jpg" type="image/jpeg"> 
+                    <img src="assets/navaja-suiza.jpg" alt="Navaja suiza con sus herramientas desplegadas">
+                  </picture>
+               <!-- <img src="assets/navaja-suiza.jpg" alt="Navaja suiza con sus herramientas desplegadas"> -->
                 <figcaption><a href="https://blog.aulaformativa.com/que-es-postcss/">PostCSS es una navaja suiza para
                         las hojas de estilo.</a></figcaption>
             </figure>
@@ -46,6 +60,22 @@
                 sean posibles. De manera general, no existen limitaciones en cuanto al nivel y tipo de manipulaciones
                 que los plugins de PostCSS pueden aplicar a tu código. Básicamente, cualquier transformación que quieras
                 realizar la puedes escribir tú mismo en JavaScript si es que no existe todavía.</p>
+
+            <p>La larga lista de plugins disponibles para PostCSS es uno de los mejores puntos que tiene a su favor. La
+                gran variedad de plugins ofrece una funcionalidad realmente ilimitada. La lista de plugins está dividida
+                por categorías, de modo que puedes fácilmente buscar y descargar el plugin que necesitas.</p>
+
+            <p>Algunas de las categorías que encontramos son manejo de sistemas de grillas, sintaxis futura, manejo de
+                color, atajos y herramientas de análisis. Con los plugins de PostCSS puedes realizar tareas como
+                transformar valores RGB a sistema hexadecimal, añadir prefijos a los selectores de clase, incluir hojas
+                de estilos para imágenes de diseño adaptativo, etc.</p>
+            <figure> <img src="/assets/persiana.gif" alt="Peter Griffin intenta subir una persiana">
+                <figcaption>Con PostCSS es más fácil despedirse de esta imagen</figcaption>
+            </figure>
+
+
+            <p>Sin duda, no importa la modificación que desees realizar, seguramente encuentras el plugin necesario de
+                PostCSS para lograrlo.</p>
 
             <section class="licencia">
                 <small>Texto e imagen extraídos de: Aula Formativa (<time datetime="2019-07-04">4 de julio de

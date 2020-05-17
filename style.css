@@ -123,6 +123,16 @@ footer small {
     text-decoration: none;
 }
 
+.detail__top-img {
+    margin-bottom: 1em;
+}
+
+.index__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .lateral {
     background-color: var(--clr-second);
     padding: 1em;
@@ -160,13 +170,13 @@ footer small {
 
 .main__nav a {
     background-color: var(--clr-main);
-    padding: 16px;
     display: flex;
     justify-content: center;
+    opacity: 0.9;
 }
 
 .main__nav a:hover {
-    background-color: var(--clr-main-light);
+    opacity: 1;
 }
 
 .main__nav a:active {
@@ -188,12 +198,10 @@ footer small {
     text-align: center;
 }
 
-.menu .seleccionado {
-    background-color: var(--clr-main-light);
-}
-
-.menu a:last-of-type {
+.menu a:nth-last-child(-n+2),
+.menu span:nth-last-child(-n+2) {
     background-color: var(--clr-main);
+    margin-top: 4px;
 }
 
 .menu h1 {
@@ -206,6 +214,13 @@ footer small {
 
 .nav__category {
     margin-top: 2em;
+}
+
+.nav__category__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
 }
 
 .video {
@@ -244,7 +259,8 @@ footer small {
     }
 
     .main__nav {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .main__nav ul {
@@ -254,11 +270,7 @@ footer small {
     }
 
     .main__nav ul li {
-        width: 550px;
-    }
-
-    .main__nav a {
-        padding: 24px;
+        width: 450px;
     }
 
     .menu {
@@ -273,8 +285,11 @@ footer small {
         margin-right: auto;
     }
 
-    .menu a:last-of-type {
+
+    .menu a:nth-last-child(-n+2),
+    .menu span:nth-last-child(-n+2) {
         background-color: var(--clr-second);
+        margin-top: 0;
     }
 
     .menu a:hover {
@@ -354,9 +369,5 @@ footer small {
 
     .main__nav ul li {
         width: 48%;
-    }
-
-    .main__nav a {
-        padding: 32px;
     }
 }
