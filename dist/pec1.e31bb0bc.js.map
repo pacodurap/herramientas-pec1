@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":["console","log"],"mappings":"AAAAA,OAAO,CAACC,GAAR,CAAY,WAAZ;AACAD,OAAO,CAACC,GAAR,CAAY,iCAAZ;AACAD,OAAO,CAACC,GAAR,CAAY,oBAAZ","file":"pec1.e31bb0bc.js","sourceRoot":"..","sourcesContent":["console.log('WikiFront');\nconsole.log('PEC 1 - Herramientas HTML y CSS');\nconsole.log('Paco Durán Aparici');       "]}
