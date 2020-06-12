@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WikiFront - PostCSS</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hind:wght@500;700&amp;family=Vollkorn:ital,wght@0,400;0,600;1,400&amp;display=swap"
-        rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="/node_modules/reset-css/reset.css" />
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind:wght@500;700&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap');
+    </style>
 </head>
 
 <body>
@@ -49,10 +51,10 @@
             <figure>
                 <picture>
                     <source srcset="assets/navaja-suiza.webp" type="image/webp">
-                    <source srcset="assets/navaja-suiza.jpg" type="image/jpeg"> 
+                    <source srcset="assets/navaja-suiza.jpg" type="image/jpeg">
                     <img src="assets/navaja-suiza.jpg" alt="Navaja suiza con sus herramientas desplegadas">
-                  </picture>
-               <!-- <img src="assets/navaja-suiza.jpg" alt="Navaja suiza con sus herramientas desplegadas"> -->
+                </picture>
+                <!-- <img src="assets/navaja-suiza.jpg" alt="Navaja suiza con sus herramientas desplegadas"> -->
                 <figcaption><a href="https://blog.aulaformativa.com/que-es-postcss/">PostCSS es una navaja suiza para
                         las hojas de estilo.</a></figcaption>
             </figure>
@@ -69,7 +71,8 @@
                 color, atajos y herramientas de análisis. Con los plugins de PostCSS puedes realizar tareas como
                 transformar valores RGB a sistema hexadecimal, añadir prefijos a los selectores de clase, incluir hojas
                 de estilos para imágenes de diseño adaptativo, etc.</p>
-            <figure> <!--<img src="/assets/persiana.gif" alt="Peter Griffin intenta subir una persiana">-->
+            <figure>
+                <!--<img src="/assets/persiana.gif" alt="Peter Griffin intenta subir una persiana">-->
                 <video src="/assets/persiana.mp4" width="100%" autoplay loop></video>
                 <figcaption>Con PostCSS es más fácil despedirse de esta imagen cuando trabajas con CSS</figcaption>
             </figure>
@@ -100,8 +103,9 @@
             <small>Aula 1</small>
             <small>Paco Durán Aparici</small>
         </div>
-       <!--<img class="footer__animation" src="./assets/coding-kitten.gif" alt="Gato acabando una PEC">-->
-       <video class="footer__animation" src="/assets/coding-kitten.mp4" alt="Gato acabando una PEC" width="100%" autoplay loop></video>
+        <!--<img class="footer__animation" src="./assets/coding-kitten.gif" alt="Gato acabando una PEC">-->
+        <video class="footer__animation" src="/assets/coding-kitten.mp4" alt="Gato acabando una PEC" width="100%"
+            autoplay loop></video>
     </footer>
     <script src="./index.js"></script>
 </body>
