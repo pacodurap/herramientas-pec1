@@ -11,9 +11,16 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/node_modules/reset-css/reset.css" />
     <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+        function ytvideo()
+        {
+            document.getElementById('parcelvideo').src = 'https://www.youtube.com/embed/OK6akGZCC88';
+        }
+    </script>
 </head>
 
-<body>
+<body onload="ytvideo();">
     <nav class='menu'>
         <a class="logo" href="index.html">
             <img class="logo__img" src="/assets/logo.png" srcset="/assets/logo.png 1x, /assets/logo@2x.png 2x"
@@ -51,7 +58,7 @@
             <p>En el siguiente vídeo se explica su funcionamiento y se muestran todos los pasos necesarios para la
                 instalación y configuración de Parcel.</p>
             <figure class="video">
-                <iframe rel="dns-prefetch" width="560" height="315" src="https://www.youtube.com/embed/OK6akGZCC88" frameborder="0"
+                <iframe id="parcelvideo" rel="dns-prefetch" width="560" height="315" src="" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </figure>
